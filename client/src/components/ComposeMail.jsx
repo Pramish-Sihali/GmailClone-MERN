@@ -58,8 +58,8 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
     const saveDraftService = useApi(API_URLS.saveDraftEmails);
 
     const config = {
-        Username: process.env.REACT_APP_USERNAME,
-        Password: process.env.REACT_APP_PASSWORD,
+        Username: 'pramish.sihali@kingscollege.edu.np',
+        Password: '1BD88D90F3148436E1BBB362027EDC7B688C',
         Host: 'smtp.elasticemail.com',
         Port: 2525,
     }
@@ -90,7 +90,7 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
             body : data.body,
             date: new Date(),
             image: '',
-            name: 'Pramish Sihali',
+            name: 'Code for Interview',
             starred: false,
             type: 'sent'
         }
@@ -115,7 +115,7 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
             body : data.body,
             date: new Date(),
             image: '',
-            name: 'Pramish Sihali',
+            name: 'Code for Interview',
             starred: false,
             type: 'drafts'
         }
